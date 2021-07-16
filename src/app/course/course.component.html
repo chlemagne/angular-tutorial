@@ -5,7 +5,10 @@
     </li>
 </ul>
 <p>
-    <button class="btn btn-primary">Click me!</button>
+    <!-- NOTE:  If component field ``isActive`` is true, then the property
+                value of ``class`` will be set to "btn btn-primary active".
+    -->
+    <button class="btn btn-primary" [class.active]="isActive">Click me!</button>
 </p>
 <!-- NOTE:  Property Binding is one-way: Component to DOM.
             Value changes in DOM will not be propagated to the Component.
