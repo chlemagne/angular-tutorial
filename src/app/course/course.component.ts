@@ -11,7 +11,7 @@ export class CourseComponent implements OnInit {
   title = "List of courses";
   courses;
   imageUrl = "https://lorempixel.com/400/210/";
-  isActive = true;
+  isActive = false;
 
   constructor(service: CourseService) {
     this.courses = service.getCourses();

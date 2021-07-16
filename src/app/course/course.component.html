@@ -7,8 +7,13 @@
 <p>
     <!-- NOTE:  If component field ``isActive`` is true, then the property
                 value of ``class`` will be set to "btn btn-primary active".
+
+         NOTE:  See https://www.w3schools.com/jsref/dom_obj_style.asp
+                for the list of HTML DOM Object Styles.
     -->
-    <button class="btn btn-primary" [class.active]="isActive">Click me!</button>
+    <button class="btn btn-primary"
+            [class.active]="isActive"
+            [style.backgroundColor]="isActive ? 'blue' : 'green'">Click me!</button>
 </p>
 <!-- NOTE:  Property Binding is one-way: Component to DOM.
             Value changes in DOM will not be propagated to the Component.
