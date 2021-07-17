@@ -7,6 +7,7 @@ import { CourseComponent } from './course/course.component';
 import { SummaryPipe } from './summary.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { LikeComponent } from './like/like.component';
+import { AccordionComponent } from './accordion/accordion.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { LikeComponent } from './like/like.component';
     CourseComponent,
     SummaryPipe,
     FavoriteComponent,
-    LikeComponent
+    LikeComponent,
+    AccordionComponent
   ],
   imports: [
     BrowserModule,
