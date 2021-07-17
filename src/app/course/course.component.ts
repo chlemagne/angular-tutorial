@@ -12,6 +12,7 @@ export class CourseComponent implements OnInit {
   courses;
   imageUrl = "https://lorempixel.com/400/210/";
   isActive = false;
+  inputValue = "Enter something here";
 
   constructor(service: CourseService) {
     this.courses = service.getCourses();
@@ -26,7 +27,7 @@ export class CourseComponent implements OnInit {
     console.log("Clicked!", event);
   }
 
-  onKeyUpEnter(value: String) {
-    console.log(value);
+  onKeyUpEnter() {
+    console.log(this.inputValue);
   }
 }

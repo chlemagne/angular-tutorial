@@ -17,7 +17,7 @@
             (click)="onClick($event)">Click me!</button>
 </p>
 <p>
-    <input #templateVariable (keyup.enter)="onKeyUpEnter(templateVariable.value)" />
+    <input [(ngModel)]="inputValue" (keyup.enter)="onKeyUpEnter()" />
 </p>
 <!-- NOTE:  Property Binding is one-way: Component to DOM.
             Value changes in DOM will not be propagated to the Component.
