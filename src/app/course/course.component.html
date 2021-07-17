@@ -13,7 +13,8 @@
     -->
     <button class="btn btn-primary"
             [class.active]="isActive"
-            [style.backgroundColor]="isActive ? 'blue' : 'green'">Click me!</button>
+            [style.backgroundColor]="isActive ? 'blue' : 'green'"
+            (click)="onClick($event)">Click me!</button>
 </p>
 <!-- NOTE:  Property Binding is one-way: Component to DOM.
             Value changes in DOM will not be propagated to the Component.

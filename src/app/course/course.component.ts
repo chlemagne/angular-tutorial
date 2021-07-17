@@ -20,4 +20,10 @@ export class CourseComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onClick(event: MouseEvent) {
+    event.stopPropagation(); // stop event bubbling
+
+    console.log("Clicked!", event);
+  }
+
 }
