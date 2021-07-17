@@ -1,0 +1,20 @@
+<span id="number">{{ number }}</span>
+<i class="bi"
+    [class.bi-hand-thumbs-up]="reaction !== reactionType.ThumbsUp"
+    [class.bi-hand-thumbs-up-fill]="reaction === reactionType.ThumbsUp"
+    (click)="onClick(reactionType.ThumbsUp)"></i>
+
+<i class="bi"
+    [class.bi-hand-thumbs-down]="reaction !== reactionType.ThumbsDown"
+    [class.bi-hand-thumbs-down-fill]="reaction === reactionType.ThumbsDown"
+    (click)="onClick(reactionType.ThumbsDown)"></i>
+
+<i class="bi"
+    [class.bi-heart]="reaction !== reactionType.Love"
+    [class.bi-heart-fill]="reaction === reactionType.Love"
+    (click)="onClick(reactionType.Love)"></i>
+
+<i class="bi"
+    [class.bi-emoji-angry]="reaction !== reactionType.Angry"
+    [class.bi-emoji-angry-fill]="reaction === reactionType.Angry"
+    (click)="onClick(reactionType.Angry)"></i>

@@ -1,0 +1,7 @@
+#number {
+  font-size: 3rem
+}
+
+i[class^="bi"] {
+  font-size: 3rem;
+}
