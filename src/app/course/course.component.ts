@@ -26,4 +26,7 @@ export class CourseComponent implements OnInit {
     console.log("Clicked!", event);
   }
 
+  onKeyUpEnter(value: String) {
+    console.log(value);
+  }
 }
