@@ -1,3 +1,4 @@
+import { FavoriteChangeEventArgs } from './../favorite/favorite.component';
 import { CourseService } from './../course.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -31,5 +32,9 @@ export class CourseComponent implements OnInit {
 
   onKeyUpEnter() {
     console.log(this.inputValue);
+  }
+
+  onFavoriteChanged(event: FavoriteChangeEventArgs) {
+    console.log("Favorite clicked!", event.newValue);
   }
 }

@@ -32,6 +32,7 @@
             Value changes in DOM will not be propagated to the Component.
 -->
 <p>
-    <app-favorite [isFavorite]="angularCourse.isFavorite"></app-favorite>
+    <app-favorite [isFavorite]="angularCourse.isFavorite"
+                    (changed)="onFavoriteChanged($event)"></app-favorite>
 </p>
 <img [src]="imageUrl"/>
