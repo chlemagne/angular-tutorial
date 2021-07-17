@@ -10,12 +10,14 @@ export class CourseComponent implements OnInit {
 
   title = "List of courses";
   courses;
+  angularCourse;
   imageUrl = "https://lorempixel.com/400/210/";
   isActive = false;
   inputValue = "Enter something here";
 
   constructor(service: CourseService) {
     this.courses = service.getCourses();
+    this.angularCourse = service.getAngularCourse();
   }
 
   ngOnInit(): void {

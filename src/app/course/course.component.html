@@ -19,6 +19,15 @@
 <p>
     <input [(ngModel)]="inputValue" (keyup.enter)="onKeyUpEnter()" />
 </p>
+<p>
+    {{ angularCourse.title | uppercase }} <br/>
+    {{ angularCourse.students | number }} <br/>
+    {{ angularCourse.rating | number: '1.2-2' }} <br/>
+    {{ angularCourse.price | currency:'AUD':true:'3.2-2' }} <br/>
+    <!-- Reference: https://angular.io/api/common/DatePipe -->
+    {{ angularCourse.releaseDate | date:'shortDate' }} <br/>
+    {{ angularCourse.description }}
+</p>
 <!-- NOTE:  Property Binding is one-way: Component to DOM.
             Value changes in DOM will not be propagated to the Component.
 -->
