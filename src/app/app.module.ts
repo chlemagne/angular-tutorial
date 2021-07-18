@@ -8,6 +8,7 @@ import { SummaryPipe } from './summary.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { LikeComponent } from './like/like.component';
 import { AccordionComponent } from './accordion/accordion.component';
+import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AccordionComponent } from './accordion/accordion.component';
     SummaryPipe,
     FavoriteComponent,
     LikeComponent,
-    AccordionComponent
+    AccordionComponent,
+    NewCourseFormComponent
   ],
   imports: [
     BrowserModule,
