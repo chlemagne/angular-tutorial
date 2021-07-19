@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -9,6 +9,7 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { LikeComponent } from './like/like.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
+import { SignupFormComponent } from './signup-form/signup-form.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +19,13 @@ import { NewCourseFormComponent } from './new-course-form/new-course-form.compon
     FavoriteComponent,
     LikeComponent,
     AccordionComponent,
-    NewCourseFormComponent
+    NewCourseFormComponent,
+    SignupFormComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule // enable two-way binding
+    FormsModule, // enable two-way binding
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
